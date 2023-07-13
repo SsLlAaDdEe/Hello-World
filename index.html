@@ -3,40 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Document</title>
+    <!--This is the internal method of styling-->
+    <style>
+      h2 {
+        color: red;
+      }
+    </style>
+    <!--This is the external method of styling-->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <h1>To do list</h1>
-    <ul>
-      <li>Begin the journey</li>
-      <li>Learn HTML</li>
-      <li>Learn CSS</li>
-      <li>Learn Javascript</li>
-    </ul>
-    <h2>HTML</h2>
-    <p>This involves everything i've learnt today 12/07/23</p> 
-    <!--This is basically scribbles -->
+    <!--This is the inline method of styling-->
+    <h1 style="color: red">Introduction to CSS</h1>
+    <h2>Second line of the page</h2>
+    <h3>Third line of the page</h3>
     <div>
-        <b>Bold Text</b>
+      <section id="home">
+        <h1>Home</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
+          optio delectus, dicta quod ipsa quisquam deleniti exercitationem
+          dignissimos nemo laborum dolorem necessitatibus recusandae facilis
+          voluptates quis a reprehenderit vel! Nesciunt. ipsum dolor sit amet
+          consectetur adipisicing elit. Velit quaerat maiores, iure quam enim
+          quia deleniti tempora sit, quis repellat beatae facilis at fugiat
+          eaque repellendus voluptates, cupiditate nisi exercitationem.
+        </p>
+        <!--This is an application of the id method in a page to access other parts of the page instantly-->
+        <a href="#footer">Go to footer</a>
+      </section>
     </div>
-    <!--This is a link to google-->
-    <a href="https://google.com">google</a>
-    <!--THis is a link to another webpage in the same folder-->
-    <a href="dashboard.html">Dashboard</a>
-    <!--I've already implemented the list tags earlier one-->
-    <ol>
-        This is an ordered list
-        <li>Apple</li>
-        <li>Ball</li>
-        <li>Cup</li>
-    </ol>
-    <ul>
-        This is an unordered list
-        <li>Apple</li>
-        <li>Ball</li>
-        <li>Cup</li>
-    </ul>
-    <!--The footer will appear at the end of the webpage-->
-    <footer>Copyright Terms & Conditions</footer>
+    <p class="red">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque odio
+      ducimus error quasi nam ipsum tenetur animi hic provident quia.
+    </p>
+    <p class="blue">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla rerum,
+      totam iusto accusamus consequatur ipsa dolores corrupti! Consequatur, odio
+      quidem!
+    </p>
+    <p id="title" class="green">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sapiente
+      corrupti asperiores quos numquam aliquam repellendus error delectus omnis
+      debitis!
+    </p>
+    <section id="footer">
+      <h1>Footer</h1>
+      <p id="sub-title">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum
+        mollitia perspiciatis, at ipsa optio hic ipsam illum. Impedit, minima
+        voluptate.
+      </p>
+      <a href="#home">Back to top</a>
+      <a href="bmodel.html">Box</a>
+    </section>
   </body>
 </html>
