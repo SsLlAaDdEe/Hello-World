@@ -1,10 +1,51 @@
 .box {
-    /*This displays a basic box model*/
-    width: 200px;
-    height: 200px;
-    background-color: green;
-    border: 15px solid red;
-    padding: 15px;
-    margin: 15px;
-    box-sizing: content-box;
+  /*This displays a basic box model*/
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  border: 15px solid red;
+  padding: 15px;
+  margin: 15px;
+  box-sizing: content-box;
+}
+
+body {
+    height: 200vh;
+}
+
+div {
+  height: 200px;
+  border: 3px solid black;
+}
+
+/*This shows ways to set the position of an element using either relative absolute or static*/
+.red {
+  background-color: red;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.child {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/*This sets an element to remain at a certain part of the screen*/
+.bottom {
+    position: fixed;
+    bottom: 0;
+    background-color: azure;
+}
+
+/*This sticks to a certain part of the viewing screen once its scrolled past a certain point*/
+.top {
+    position: sticky;
+    top: 1px;
+    width: 100%;
+    background-color: grey;
 }
